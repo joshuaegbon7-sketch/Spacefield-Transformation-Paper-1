@@ -1,64 +1,127 @@
-# 🪐 Spacefield Transformation: A First-Principles Derivation of the Universal Matter Mass, Confinement Radius, and Present-Epoch Cosmology
+# Spacefield Transformation I
+
+## A Geometric Closure Framework for Cosmological Mass, Confinement Scale, and Expansion Dynamics
+
+**Author:** Joshua Chukwuemeke Egbon  
+**Affiliation:** Spacefield Transformation Technologies Ltd, United Kingdom  
+**Contact:** joshua@spacefieldtech.com  
+**Version:** 1.0.0  
+**Release date:** 19 August 2026
 
 ---
 
-## 🧠 Overview
-This repository contains the full LaTeX source, figures, and references for **Paper 1** of the *Spacefield Transformation (SFT)* research series.  
-The paper establishes the **cosmological foundations of SFT** — a closed, parameter-free cosmology derived entirely from the **Universal Confinement Zone (UCZ)** postulate.
+## Overview
 
-SFT predicts the observed Hubble constant, vacuum-energy density, and total cosmic mass purely from geometric closure conditions — without parameter fitting or empirical tuning.
+This repository contains the source code, numerical notebooks, figures, and reproducibility materials associated with **Spacefield Transformation I (Paper I)**.
 
----
+Paper I formulates the minimal **Spacefield Transformation (SFT)** / **Universal Confinement Zone (UCZ)** cosmological closure framework.
 
-## 📊 Key Results
+The framework distinguishes between:
 
-| Quantity | Symbol | SFT Value | Notes |
-|-----------|---------|-----------|-------|
-| Hubble constant | $H_0$ | 68.05 km s⁻¹ Mpc⁻¹ | Derived geometrically |
-| Critical density | $\rho_c$ | 8.698 × 10⁻²⁷ kg m⁻³ | Matches Planck 2020 |
-| Dark-energy density | $\rho_{\mathrm{DE},0}$ | 5.958 × 10⁻²⁷ kg m⁻³ | From UCZ closure |
-| Matter rest mass | $M_m$ | 9.740 × 10⁵³ kg | Fixed invariant |
-| Confinement radius | $R_c$ | 1.447 × 10²⁷ m | Geometric horizon |
-| Ratio $R_0/R_c$ | — | 0.3037 | Present-epoch saturation |
-| Cosmic age | $t_0$ | 13.66 Gyr | Derived from SFT anchors |
+- the dimensionless SFT closure and partition structure;
+- the specified dimensional confinement normalization of the minimal branch;
+- quantities determined conditionally from the closure construction; and
+- present-epoch cosmological quantities supplied as observational anchors.
 
----
+The baseline dimensional confinement normalization is
 
-## 🔬 Abstract
-> The **Spacefield Transformation (SFT)** reformulates cosmology as a geometric closure law linking the total matter rest mass, curvature radius, and vacuum impedance of the Universe.  
-> By enforcing a fixed boundary condition — the **Universal Confinement Zone (UCZ)** — the Hubble constant and vacuum-energy density emerge algebraically from first principles.  
-> SFT resolves the *Hubble tension* and *cosmological-constant problem* within a unified geometric framework, predicting measurable deviations from ΛCDM in luminosity distances and gravitational-wave propagation.
+\[
+\eta_{\min}=\frac{2}{9}\ {\rm kg\,m^{-2}}.
+\]
 
----
----
+This dimensional normalization is specified for the minimal SFT branch rather than derived from the dimensionless partition ratios alone.
 
-## 🖼️ Figures
+Conditional on this normalization, the closure construction determines the baseline matter mass \(M_m\) and confinement radius \(R_c\).
 
-| Figure | Caption / Description |
-|---------|----------------------|
-| **Fig 1 — UCZ Geometry and Confinement Boundary** | Schematic of the Universal Confinement Zone showing $R_c = 2GM_m/c^2$. |
-| **Fig 2 — Evolution of $R_0/R_c$** | Present-to-asymptotic ratio illustrating curvature saturation. |
-| **Fig 3 — Vacuum Elasticity and Impedance $Z_0$** | Relation between curvature stiffness, vacuum energy, and electromagnetic impedance. |
-| **Fig 4 — Cosmic Age Comparison** | Comparison between SFT, Planck, SH0ES, and EDE age models. |
-| **Fig 5 — Predicted Gravitational-Wave Observables** | SFT deviations in $d_L^{GW}/d_L^{EM}$ and $H_0^{GW}$. |
-| **Fig 6 — ΛCDM vs SFT Comparison** | Table summarizing derived parameters and observational contrasts. |
+Present-epoch observational quantities are then combined with the closure-normalized quantities and standard FRW consistency relations to reconstruct the corresponding late-time cosmological background.
 
 ---
 
-## 🧩 Citation
-If referencing this repository or paper, please cite:
+## Dark-Energy Evolution
 
-> **Author**, *Spacefield Transformation: A First-Principles Derivation of the Universal Matter Mass, Confinement Radius, and Present-Epoch Cosmology* (2025).  
-> DOI / arXiv preprint TBD.
+Paper I introduces the phenomenological boundary-scaling law
+
+\[
+\rho_{\rm DE}(a)
+=
+\rho_{{\rm DE},0}a^{3(1-\alpha)}.
+\]
+
+The transport parameter \(\alpha\) is not assigned a unique SFT-predicted value in Paper I.
+
+The limit
+
+\[
+\alpha=1
+\]
+
+corresponds to constant dark-energy density and therefore reproduces the corresponding Lambda-CDM background evolution.
+
+Values of \(\alpha\) close to unity are used to calculate **conditional observational response curves**, rather than parameter-free predictions of the minimal closure condition.
 
 ---
 
-### 🧮 Baseline Parameters (2025 SFT)
-All numerical predictions in Paper 1 use the updated baseline constants:
+## Standard Sirens
+
+Paper I assumes standard General-Relativistic tensor propagation.
+
+Consequently, gravitational-wave and electromagnetic signals propagating through the same SFT cosmological background share the same cosmological luminosity distance.
+
+The standard-siren observable studied in the final Paper I formulation is therefore
+
+\[
+\Delta_{\rm siren}(z)
+=
+\frac{d_L^{\rm SFT}(z)}
+     {d_L^{\Lambda{\rm CDM}}(z)}
+-1,
+\]
+
+rather than a gravitational-wave versus electromagnetic propagation offset.
 
 ---
 
-**© 2025 Spacefield Transformation Research Project**  
+## Reproducibility
 
+The numerical materials associated with Paper I include calculations for:
 
-## 📁 Repository Structure
+- cosmic-age integration;
+- supernova distance-modulus residuals;
+- fractional-density evolution;
+- SFT versus Lambda-CDM expansion-rate residuals;
+- standard-siren luminosity-distance residuals; and
+- future comoving-horizon calculations.
+
+The final repository is intended to preserve the numerical notebooks and figure-generation materials corresponding specifically to **Paper I v1.0.0**.
+
+Development-stage calculations that were superseded during the final scientific audit should not be interpreted as part of the final Paper I formulation.
+
+---
+
+## Repository Structure
+
+The v1.0.0 release is organised around the following structure:
+
+```text
+Spacefield-Transformation-Paper-1/
+│
+├── README.md
+├── CITATION.cff
+├── main.tex
+├── SFT_Paper1_References.bib
+├── Spacefield_Transformation_I_v1.0.pdf
+│
+├── figures/
+│   ├── Appendix_Fig_A1_t0_integrand_updated.png
+│   ├── SFT_SN_residuals_updated.png
+│   ├── DeltaMu_panels.png
+│   ├── H_ratio_SFT_LCDM.png
+│   └── standard_siren_SFT_LCDM_residual.png
+│
+└── notebooks/
+    ├── Integrand_Cosmic_Age.ipynb
+    ├── SFT_SN_Residuals_vs_LCDM.ipynb
+    ├── Fractional_Density_Evolution.ipynb
+    ├── Fractional_Hubble_Deviation.ipynb
+    ├── SFT_Standard_Siren_Distance_Residual.ipynb
+    └── Cumulative_Comoving_Horizon.ipynb
