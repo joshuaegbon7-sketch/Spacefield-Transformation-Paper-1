@@ -1,4 +1,5 @@
 cff-version: 1.2.0
+
 message: "If you use or reference this work, please cite Spacefield Transformation I."
 
 title: "Spacefield Transformation I: A Geometric Closure Framework for Cosmological Mass, Confinement Scale, and Expansion Dynamics"
@@ -15,7 +16,11 @@ version: "1.0.0"
 
 date-released: "2026-08-19"
 
+doi: "10.5281/zenodo.22004528"
+
 repository-code: "https://github.com/joshuaegbon7-sketch/Spacefield-Transformation-Paper-1"
+
+url: "https://doi.org/10.5281/zenodo.22004528"
 
 abstract: >-
   Spacefield Transformation I formulates the minimal Spacefield
@@ -50,3 +55,5 @@ preferred-citation:
       given-names: "Joshua Chukwuemeke"
   year: 2026
   version: "1.0.0"
+  doi: "10.5281/zenodo.22004528"
+  url: "https://doi.org/10.5281/zenodo.22004528"
